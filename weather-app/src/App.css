@@ -1,0 +1,152 @@
+/* Общие стили для обеих тем */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1, h2, p {
+  margin: 10px 0;
+}
+
+/* Светлая тема по умолчанию */
+body {
+  background-color: #f0f8ff; /* светло-голубой фон */
+}
+
+.App {
+  background-color: #ffffff; /* белый фон контейнера */
+}
+
+h1, h2 {
+  color: #1e90ff; /* синий цвет заголовков */
+}
+
+p {
+  color: #333333; /* темно-серый текст */
+}
+
+/* Темная тема */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #2b2b2b; /* темный фон */
+  }
+
+  .App {
+    background-color: #3c3c3c; /* темный фон контейнера */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  h1, h2 {
+    color: #f0f8ff; /* светло-голубой цвет заголовков */
+  }
+
+  p {
+    color: #dcdcdc; /* светло-серый текст */
+  }
+}
+
+/* Остальные стили */
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.weather-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.weather-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #1e90ff; /* синий цвет границы */
+  border-radius: 4px;
+  font-size: 16px;
+  width: 80%;
+  max-width: 300px;
+  background-color: #d3d3d3; /* серый фон для поля ввода */
+  color: #333333; /* темный текст */
+}
+
+.weather-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff; /* белый текст */
+  background-color: #1e90ff; /* синий цвет кнопки */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.weather-button:hover {
+  background-color: #4682b4; /* темно-синий цвет при наведении */
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.weather-info {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-description {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #333333;
+}
+
+/* Адаптивные стили */
+@media (max-width: 600px) {
+  .weather-input {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .weather-button {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .weather-info {
+    margin-top: 15px;
+  }
+
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .weather-description {
+    font-size: 16px;
+  }
+}

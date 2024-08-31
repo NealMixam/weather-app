@@ -1,0 +1,91 @@
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .weather-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .weather-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #1e90ff; /* синий цвет границы */
+    border-radius: 4px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 300px;
+    background-color: #d3d3d3; /* серый фон для поля ввода */
+    color: #333333; /* темный текст для контраста */
+  }
+  
+  .weather-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff; /* белый текст */
+    background-color: #1e90ff; /* синий цвет кнопки */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .weather-button:hover {
+    background-color: #4682b4; /* темно-синий цвет при наведении */
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .weather-description {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #333333;
+  }
+  
+  @media (max-width: 600px) {
+    .weather-input {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .weather-button {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .weather-info {
+      margin-top: 15px;
+    }
+  
+    .weather-icon {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .weather-description {
+      font-size: 16px;
+    }
+  }
+  
